@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viga&display=swap" rel="stylesheet">
+    <title>menu</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+       
+        }
+    .header{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        height: 60px;
+        background: rgba(226, 227, 228, 0.8); /* Add a white background with some transparency */
+        align-items: center;
+        z-index: 100;
+    }
+    .headeritem{
+        flex-shrink: 0;;
+        background-color:  rgba(215, 221, 226, 0.1);
+        border-style: hidden;
+        border-radius: 3px;
+        padding: 20px;
+        margin-left: 40px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .headeritemsearch{
+        margin-left: 100px;
+        background-color:  rgba(215, 221, 226, 0.1);
+        border-style: hidden;
+        border-radius: 3px;
+        padding: 20px;
+        
+    }
+    .headeritemlabal{
+        margin-left:200px;
+        background-color:  rgba(192, 201, 207, 0.1);
+        border-style: solid;
+        border-radius: 3px;
+        padding: 20px;
+        height: 1px;
+        border-width: 1px;
+        background-color: rgb(193, 194, 194);
+
+    }
+    .headeritem:hover , .headeritemsearch:hover , .headeritemlabal:hover {
+        background-color: brown;
+        color: aliceblue;
+        border-style: hidden;
+    }
+    .headeritemsearch_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        flex-shrink: 0;; 
+        position: fixed;
+        right: 20px;
+    }
+    .mealcontainer{
+        margin-top: 200px;
+    }
+    .thumb{
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .body_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 40px;
+            font-family: "Viga", serif;
+            font-weight: 400px;
+            font-style: normal;
+            margin-bottom: 0;
+    }
+</style>
+</head> 
+<body>
+<div class="header">
+    <div  > 
+        <button class="headeritem" >Menu</button>
+        <button class="headeritem">Lunch Box</button>
+        <button class="headeritem">Platters</button>
+        <button class="headeritem">Special</button>
+    </div>
+    <div class="headeritemsearch_container">
+        <input class="headeritemlabal" type="text">
+        <button class="headeritemsearch">🔍</button>
+    </div>
+    </div>
+    <div class="body_container"> 
+        <h1 >Testy dishes</h1>
+        <div class="mealcontainer">
+        <div>
+            <img class="thumb" src="thumb\kushary-image (1).jpeg">
+        </div>
+</div>
+    
+   
+   
+
+</body>
+
+
+</html>
