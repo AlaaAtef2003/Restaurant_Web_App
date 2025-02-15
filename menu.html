@@ -12,9 +12,10 @@
             flex-direction: column;
             justify-content: center ;
             align-items: center;
-       
+            background-color: rgb(241, 241, 241);
         }
     .header{
+       
         display: flex;
         flex-direction: row;
         position: fixed;
@@ -22,11 +23,13 @@
         left:0;
         right: 0;
         height: 60px;
+        margin-top: 0px;
         background: rgba(226, 227, 228, 0.8); /* Add a white background with some transparency */
         align-items: center;
         z-index: 100;
     }
     .headeritem{
+        color: brown;
         flex-shrink: 0;;
         background-color:  rgba(215, 221, 226, 0.1);
         border-style: hidden;
@@ -46,7 +49,7 @@
     }
     .headeritemlabal{
         margin-left:200px;
-        background-color:  rgba(192, 201, 207, 0.1);
+        background-color:  rgba(214, 217, 219, 0.1);
         border-style: solid;
         border-radius: 3px;
         padding: 20px;
@@ -74,18 +77,22 @@
         margin-top: 200px;
     }
     .thumb{
-        width: 200px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 1x;
+        margin-top: 1px;
+        width: 100%;
+        object-fit: contain;
+        height: 200px;
+        border-radius: 10px;
     }
     .body_container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+       
     }
     h1{
+        color: brown;
         display: flex;
         align-items: center;
         text-align: center;
@@ -94,7 +101,43 @@
             font-family: "Viga", serif;
             font-weight: 400px;
             font-style: normal;
-            margin-bottom: 0;
+            margin-bottom: 20px;
+    }
+    .meals{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 900px;
+        margin-top: 0;;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .container-meals{
+        padding-top: 0;
+        margin-top: 0;
+        box-shadow: 1px 1px 1px 1px rgb(187, 186, 186);
+        border-radius: 10px;
+        background-color: brown;
+    }
+    
+    .dishinfo{
+        display: flex;
+        width: 80%;
+        margin-left: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .name-dish{
+        color: rgb(219, 216, 216);
+    }
+    .price{
+        background-color: rgb(226, 222, 222);
+        color: brown;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .container-meals:hover{
+        background-color: rgb(206, 118, 118);
+      
     }
 </style>
 </head> 
@@ -113,10 +156,64 @@
     </div>
     <div class="body_container"> 
         <h1 >Testy dishes</h1>
-        <div class="mealcontainer">
-        <div>
-            <img class="thumb" src="thumb\kushary-image (1).jpeg">
+        
+        <div class="meals">
+        <div class="container-meals">
+            <div><img class="thumb" src="thumb\fata.jpeg"></div>
+            <div class="dishinfo">
+                <p class="price">250.00EGP</p>
+                <p  class="name-dish">فته مصرى</p>
+             
+            </div>
+             
         </div>
+        <div class="container-meals">
+            <div><img class="thumb" src="thumb\mash.jpeg"></div>
+            <div class="dishinfo">
+                <p class="price">150EGP</p>
+                <p  class="name-dish">كفته </p>
+             
+            </div>
+             
+        </div>
+        <div class="container-meals">
+            <div><img class="thumb" src="thumb\mo.jpeg"></div>
+            <div class="dishinfo">
+                <p class="price">120.00EGP</p>
+                <p  class="name-dish">ملوخيه</p>
+             
+            </div>
+             
+        </div>
+        <div class="container-meals">
+            <div><img class="thumb" src="thumb\kushary-image (1).jpeg"></div>
+            <div class="dishinfo">
+                <p class="price">70.00EGP</p>
+                <p  class="name-dish">كشرى</p>
+             
+            </div>
+             
+        </div>
+        <div class="container-meals">
+            <div><img class="thumb" src="thumb\pizza.jpeg"></div>
+            <div class="dishinfo">
+                <p class="price">130.00EGP</p>
+                <p  class="name-dish">بيتزا</p>
+             
+            </div>
+             
+        </div>
+        <div class="container-meals">
+            <div><img class="thumb" src="thumb\shawerma.jpeg"></div>
+            <div class="dishinfo">
+                <p class="price">180.00EGP</p>
+                <p  class="name-dish">شاورما</p>
+             
+            </div>
+             
+        </div> 
+        </div>
+    
 </div>
     
    
